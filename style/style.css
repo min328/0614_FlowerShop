@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+/* 1. Reset 설정 */
+* {
+    color: #333;
+    /* 기본 텍스트 색상 */
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* prefix, 프리픽스, 접두사 */
+}
+
+body {
+    background-color: #fff;
+    /* 배경색 흰색 적용 */
+}
+
+a:link {
+    /* <a href="URL"> 이 있는 a요소 */
+    /*  colon 콜론 link ,
+                    슈도 클래스 선택자 */
+    color: #555;
+}
+
+a:visited {
+    /* a요소를 클릭하여 URL의 위치에
+                      다녀온 것을 지칭*/
+    color: #555;
+}
+
+a:hover {
+    /* a요소에 마우스 포인터를 올렸을 때 */
+    color: #555;
+}
+
+a:active {
+    /* a요소가 활성화되었을 때 */
+    color: #555;
+}
+
+
+/* 기본 텍스트 크기 15px */
+a,
+b,
+em,
+i,
+li,
+p,
+q,
+span,
+td,
+th,
+u {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+/* Reset 끝 */
+
+/* GuideLine start ---------------------------------- */
+
+/*body {border: 1px solid #f50;}*/
+/*div#wrap {border: 1px solid #f00;}*/
+/*div#logoimg {border: 1px solid #000;}*/
+/*main#main {border: 1px solid #000;}*/
+/*div#intro {border: 1px solid #000;}*/
+/*aside#aside {border: 1px solid #000;}*/
+/*div#customerService, div#flower1, div#flower2, div#flower3 {border: 1px solid #000;}*/
+/*footer#footer {border: 1px solid #000;}*/
+
+
+/* body start ------------------------------------------- */
+body {
+    width: 1120px;
+    height: 800px;
+    background-image: url(../images/background.png);
+    background-size: 1120px 800px;
+    background-repeat: no-repeat;
+}
+
+/* div#wrap start ----------------------------------- */
+div#wrap {
+    width: 1020px;
+    border: 1px solid #bbb;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* header#header start --------------------------------- */
+
+div#logoimg {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav#gnb {
+    padding-left: 30px;
+    background-color: #c51a3a;
+}
+
+nav#gnb button {
+    color: white;
+    border: none;
+    margin: 15px 10px 15px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+/* main#main start ---------------------------------------- */
+main#main {
+    padding: 20px;
+}
+
+div#intro {
+    display: flex;
+}
+
+div#shopinfo {
+    width: 600px;
+    padding: 40px 55px 55px 55px;
+    padding-right: 0px;
+}
+
+#shopinfo h2 {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#shopinfo p {
+    color: #eb5417;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 28px;
+
+}
+
+/*aside#asdie start -------------------------------------------------*/
+aside#aside {
+    justify-content:space-between;
+}
+aside#aside>div {
+    width: 230px;
+    height: 200px;
+}
+
+div#csMenu {
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e76c6e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div#csList {
+    padding: 20px 10px 20px 40px;
+}
+
+#csList li {
+    list-style: square;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+#csList span {
+    font-weight: bold;
+}
+
+#aside div#flower1 {
+    background-image: url(../images/bg1.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    border: 1px dotted #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+#aside div#flower2 {
+    background-image: url(../images/bg2.png);
+    background-size: 150px 200px;
+    background-repeat: no-repeat;
+    border: 1px dotted #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+#aside div#flower3 {
+    background-image: url(../images/bg3.png);
+    background-size: 155px 200px;
+    background-repeat: no-repeat;
+    border: 1px dotted #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+div#flowerBox{
+    width: inherit;
+    height: 70px;
+    padding-right: 15px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+/*    line-height: 35px;*/
+    top: 120px;
+    text-align: end;
+}
+
+#flowerBox>p:first-child {
+    color: #983769;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#flowerBox>p:nth-child(2) {
+    color: #2462cd;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+}
+
+/* footer#footer start ------------------------------------------------*/
+footer#footer {
+    height: 50px;
+    border-top: 1px solid #bbb;
+    padding: 5px 40px 5px 40px;
+    justify-content:space-between;
+
+}
+
+
+nav#gnbfooter button {
+    border: none;
+    margin: 5px;
+    background-color: white;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+div#certi {
+    font-size: 12px;
+    line-height: 36px;
+}
+
+/* selected 경우 모음 start ------------------------------------ */
+
+nav#gnb button:hover {
+    color: #ccc;
+}
+
+footer#footer button:hover {
+    color: #aaa;
+}
+
+div#flowerBox:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
